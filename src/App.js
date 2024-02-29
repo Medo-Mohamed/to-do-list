@@ -21,7 +21,7 @@ function App() {
       timeCo[0] -= 12;
       timeCo[0] = `0${timeCo[0]}` 
       timeCo[2] = 'PM'
-    }else if(timeCo[0] < 12){
+    }else if(timeCo[0] <= 12){
       timeCo[2] = 'AM'
     }
     let TrueTIME = timeCo[0] === '' ? 'No Time Added' : `${timeCo[0]}:${timeCo[1]} ${timeCo[2]}` ;
